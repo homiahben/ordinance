@@ -1,0 +1,83 @@
+---
+title: "ordinance"
+format: 
+  html: 
+    toc: false
+---
+![Proposed area for Takoradi habour](images/ordinance-image.jpg){#fig-ordinance}
+
+<p style="text-align: justify;">
+This website presents my paper, **“Colonial Law and Indigenous Rights: African Responses to the Gold Coast Land Legislation, 1894–1927,”** which examines how British colonial land and forest laws transformed authority, property, and indigenous rights in the Gold Coast. Focusing on the Crown Lands Bill of 1894, the Forestry Bill of 1911, and the Forestry Ordinance of 1927, the paper argues that these laws were central to a broader colonial effort to redefine communally held and ritually protected lands as territories subject to Crown control, scientific management, and bureaucratic regulation. At the same time, the study highlights how African chiefs, educated elites, legal practitioners, and political organizations such as the Aborigines’ Rights Protection Society challenged these measures through petitions, court cases, public protest, and appeals to customary law. It further argues that these struggles left a lasting legacy, as many of the categories and legal logics introduced under colonialism continued to influence postcolonial land and forest administration in Ghana.See @fig-ordinance. 
+</p>
+## Background
+
+## Agency: ARPS, Chiefs and Cultural Resistance
+
+## Conclusion
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+######### Drag to Explore Colonial Ordinances
+
+<div>
+
+<input type="range" min="0" max="4" value="0" step="1" id="timeline" style="width:100%;">
+
+<div id="display" style="margin-top:1rem;"></div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+const data = [
+{
+year: "1844",
+title: "Bond of 1844",
+text: "Customary land authority remained dominant, though British legal hegemony and presence expanded along the coastal towns. this was undoubtedly the beginning of a long history of legislative instruments, drafted, protested against, co-opted and eventually passed but in line with colonial objective of land control."
+},
+{
+year: "1876",
+title: "The SUpreme Court Ordinance and Public Lands Ordinance",
+text: "The re-enactment of the Supreme COurt Ordinnance in the Gold Coast did not only redefine the hurisdiction of English COmmon Law but also the introduction of Bristish ideas and conceptions of land administration that vested all <em>waste lands</em> as Crown owned through the <strong><The Public Land Ordinance</strong>."
+},
+{
+year: "1894",
+title: "Crown Lands Bill",
+text: "Attempted classification of lands as available for Crown control, challenging customary tenure."
+},
+{
+year: "1911",
+title: "Forestry Bill",
+text: "Proposed expanded state control over forests and timber."
+},
+{
+year: "1927",
+title: "Forestry Ordinance",
+text: "Formalized reserve creation and restricted local land use."
+}
+];
+
+const slider = document.getElementById("timeline");
+const display = document.getElementById("display");
+
+function update(i){
+display.innerHTML = `
+<h3>${data[i].year} — ${data[i].title}</h3>
+<p>${data[i].text}</p>
+`;
+}
+
+slider.addEventListener("input", function(){
+update(this.value);
+});
+
+update(0);
+
+});
+</script>
+
+```{r}
+#| echo: false
+# this is an R chunk
+1 + 1
+```

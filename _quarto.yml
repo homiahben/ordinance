@@ -7,16 +7,40 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: test2.qmd
-        text: "Mapped Ordinances"
+
+      - text: "Mapped Ordinances"
+        menu:
+          - href: test2.qmd
+            text: "Overview"
+          - href: public-lands-1876.qmd
+            text: "Public Lands Ordinance, 1876"
+          - href: crown-lands-1894.qmd
+            text: "Crown Lands Bill, 1894"
+          - href: crown-lands-1897.qmd
+            text: "Crown Lands Bill, 1897"
+          - href: concessions-1900.qmd
+            text: "Concessions Ordinance, 1900"
+          - href: forest-bill-1911.qmd
+            text: "Forest Bill, 1911"
+          - href: forest-ordinance-1927.qmd
+            text: "Forest Ordinance, 1927"
+          - href: native-administration.qmd
+            text: "Native Administration Ordinances"
+          - href: native-jurisdiction.qmd
+            text: "Native Jurisdiction Ordinances"
+          - href: supreme-court.qmd
+            text: "Supreme Court Ordinance"
+
       - href: sources.qmd
         text: Selected Sources
-      - about.qmd
+
+      - href: about.qmd
+        text: About
 
 format:
   html:
     theme:
-      - minty
+      - Minty
       - dark
     css: styles.css
     toc: true

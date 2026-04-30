@@ -1,0 +1,33 @@
+# Paste this under website: navbar: in your _quarto.yml.
+# Use right: if your navbar is right-aligned. Use left: if your navbar is left-aligned.
+right:
+  - href: index.qmd
+    text: Home
+
+  - text: "Mapped Ordinances"
+    menu:
+      - href: mapped-ordinances-overview.qmd
+        text: "Overview"
+      - href: public-lands-1876.qmd
+        text: "Public Lands Ordinance, 1876"
+      - href: crown-lands-1894.qmd
+        text: "Crown Lands Bill, 1894"
+      - href: crown-lands-1897.qmd
+        text: "Crown Lands Bill, 1897"
+      - href: concessions-1900.qmd
+        text: "Concessions Ordinance, 1900"
+      - href: supreme-court.qmd
+        text: "Supreme Court Ordinance"
+      - href: native-administration-jurisdiction.qmd
+        text: "Native Administration and Jurisdiction"
+      - href: forest-bill-1911.qmd
+        text: "Forest Bill, 1911"
+      - href: forest-ordinance-1927.qmd
+        text: "Forest Ordinance, 1927"
+      - href: achimota-legal-sequence.qmd
+        text: "Achimota Legal Sequence"
+
+  - href: sources.qmd
+    text: Selected Sources
+  - href: about.qmd
+    text: About

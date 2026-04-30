@@ -10,7 +10,7 @@ website:
 
       - text: "Mapped Ordinances"
         menu:
-          - href: test2.qmd
+          - href: overview.qmd
             text: "Overview"
           - href: public-lands-1876.qmd
             text: "Public Lands Ordinance, 1876"
@@ -20,17 +20,16 @@ website:
             text: "Crown Lands Bill, 1897"
           - href: concessions-1900.qmd
             text: "Concessions Ordinance, 1900"
-          - href: forest-bill-1911.qmd
-            text: "Forest Bill, 1911"
+          - href: forest-bill-1910.qmd
+            text: "Forest Bill, 1910"
           - href: forest-ordinance-1927.qmd
             text: "Forest Ordinance, 1927"
-          - href: native-administration.qmd
+          - href: native-administration-jurisdiction.qmd
             text: "Native Administration Ordinances"
-          - href: native-jurisdiction.qmd
-            text: "Native Jurisdiction Ordinances"
           - href: supreme-court.qmd
             text: "Supreme Court Ordinance"
-
+      - href: achimota-legal-sequence.qmd
+        text: Achimota
       - href: sources.qmd
         text: Selected Sources
 

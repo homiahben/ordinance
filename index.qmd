@@ -35,13 +35,13 @@ The re-enactment of the Supreme COurt Ordinnance in the Gold Coast did not only 
 
 Attempted classification of lands as available for Crown control, challenging customary tenure.
 
+### Forestry Bill
+1911
 
-year: "1911",
-title: "Forestry Bill",
-text: "Proposed expanded state control over forests and timber."
+Proposed expanded state control over forests and timber.
 
+### Forestry Ordinance
+1927
 
-year: "1927",
-title: "Forestry Ordinance",
-text: "Formalized reserve creation and restricted local land use."
+Formalized reserve creation and restricted local land use.
 

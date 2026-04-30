@@ -1,7 +1,227 @@
 /* css styles */
-#display {
-background: #f8f5ee;
-padding: 1rem;
-border-left: 5px solid #2c7a7b;
-border-radius: 8px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Crimson+Text:wght@400;600;700&display=swap');
+
+/* =========================
+   BACKGROUND (historical image)
+   ========================= */ 
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #1f1f1f;
+
+  /* warm background maintained; image made slightly more translucent */
+  background-image: linear-gradient(
+      rgba(248, 245, 238, 0.86),
+      rgba(248, 245, 238, 0.86)
+    ),
+    url("images/historical-map.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   CONTENT BOX (transparent panel)
+   ========================= */
+
+main, .content, .quarto-container, .page-columns {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 28px;
+
+  /* background color maintained, still allows image to show */
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 12px;
+}
+
+/* =========================
+   NAVBAR / HEADER
+   ========================= */
+
+#quarto-header {
+  background: rgba(255, 255, 255, 0.72) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#quarto-header .navbar {
+  background: rgba(5, 5, 5, 0.96) !important; /* piano black */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 20px;
+}
+
+#quarto-header .navbar-brand,
+#quarto-header .nav-link,
+#quarto-header .menu-text,
+#quarto-header .dropdown-toggle {
+  color: #f5f1e8 !important;
+  font-weight: 500;
+}
+
+#quarto-header .navbar-brand:hover,
+#quarto-header .nav-link:hover,
+#quarto-header .menu-text:hover,
+#quarto-header .dropdown-toggle:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+#quarto-header .dropdown-menu {
+  background-color: rgba(5, 5, 5, 0.98) !important; /* piano black */
+  border: none;
+}
+
+#quarto-header .dropdown-item {
+  color: #f5f1e8 !important;
+}
+
+#quarto-header .dropdown-item:hover {
+  background-color: rgba(25, 25, 25, 0.98) !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1, h2, h3 {
+  margin-top: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* =========================
+   LINKS (site-wide)
+   ========================= */
+
+a {
+  color: #050505; /* piano black */
+  font-weight: 600;
+}
+
+a:hover {
+  color: #333333;
+}
+
+/* =========================
+   OPTIONAL: subtle polish
+   ========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   DROPDOWN MENU FIX
+   ========================= */
+
+.dropdown-menu {
+  background-color: rgba(5, 5, 5, 0.95) !important; /* piano black */
+  border: none;
+}
+
+.dropdown-item {
+  color: #f5f1e8 !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(25, 25, 25, 0.95) !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   TYPOGRAPHY (ARCHIVAL STYLE)
+   ========================= */
+
+/* Body text */
+body {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* Slight hierarchy tuning */
+h1 {
+  font-size: 2.35rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+  max-width: 78ch;
+}
+
+/* =========================
+   MOBILE INDEX / SEARCH ICON COLOR FIX
+   ========================= */
+
+.quarto-navbar-tools .bi,
+.quarto-navbar-tools svg,
+.quarto-navbar-tools svg path,
+.quarto-navbar-tools svg line,
+.quarto-navbar-tools svg circle {
+  color: #f5f1e8 !important;
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+
+.quarto-search-button,
+.quarto-sidebar-toggle,
+.aa-DetachedSearchButton,
+.aa-DetachedSearchButtonIcon {
+  color: #f5f1e8 !important;
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+
+.quarto-navbar-tools .bi::before,
+.quarto-search-button::before,
+.quarto-sidebar-toggle::before {
+  color: #f5f1e8 !important;
+}
+
+.quarto-navbar-tools * {
+  color: #f5f1e8 !important;
+}
+
+.quarto-navbar-tools svg * {
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+
+/* =========================
+   FORCE MOBILE HAMBURGER ICON TO LIGHT COLOR
+   ========================= */
+
+.navbar-toggler {
+  border-color: #f5f1e8 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28245,241,232,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }

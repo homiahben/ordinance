@@ -1,0 +1,139 @@
+---
+title: "Untitled"
+foramt: html
+editor: visual
+---
+
+```{r}
+library(sf)
+library(tidygeocoder)
+library(tidyverse)
+library(USAboundaries)
+```
+
+Get a base map of counties of Veriginia 
+```{r}
+us_counties(states="Virginia")
+
+```
+
+plot(us_counties(state = "Virginia")) 
+```{r}
+counties <- us_counties(states ="Virginia")
+counties
+#plot(us_states(states = "Virginia"))
+
+```
+```{r}
+#geometry is sticky
+counties |>
+  select(name)
+
+```
+inspect the geographic side of the data 
+```{r}
+st_crs(counties)
+```
+
+let's geocode some locations with tidygeocoder
+
+```{r}
+locations <- geo(c("Blacksburg", "Charlottesville"))
+locations
+
+# make locations geographic
+locations_sf <-st_as_sf(locations, 
+                         coords = c("long", "lat"),
+                         crs = 4326)
+```
+project the data 
+
+```{r}
+state_plane(state = "VA")
+locations_proj <- st_transform(locations_sf, crs = "EPSG:32146")
+counties_proj <- st_transform(counties, crs = "EPSG:32146")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = counties_proj) +
+  geom_sf(data = locations_proj)
+```
+
+```{r}
+library(leaflet)
+  
+  leaflet() |>
+    addTiles() |>
+    addPolygons(data = counties,
+              fillOpacity = 0,
+              color = "#000",
+              weight = 2) |>
+  addMarkers(data = locations_sf, label = address)
+```
+
+install.packages(c(
+  "sf",
+  "osmdata",
+  "ggplot2",
+  "ggspatial",
+  "dplyr"
+))
+
+```{r}
+install.packages(c("sf", "ggplot2", "ggspatial"))
+
+library(sf)
+library(ggplot2)
+library(ggspatial)
+
+# Approximate Achimota Forest boundary coordinates
+achimota_coords <- matrix(
+  c(
+    -0.227, 5.632,
+    -0.219, 5.641,
+    -0.205, 5.642,
+    -0.192, 5.633,
+    -0.190, 5.619,
+    -0.204, 5.611,
+    -0.221, 5.615,
+    -0.227, 5.632
+  ),
+  ncol = 2,
+  byrow = TRUE
+)
+
+# Create polygon
+achimota_polygon <- st_polygon(list(achimota_coords)) |>
+  st_sfc(crs = 4326) |>
+  st_sf(name = "Achimota Forest Reserve", geometry = _)
+
+# Create map
+ggplot() +
+  geom_sf(
+    data = achimota_polygon,
+    fill = "forestgreen",
+    color = "darkgreen",
+    alpha = 0.6,
+    linewidth = 1
+  ) +
+  annotation_scale(location = "bl", width_hint = 0.3) +
+  annotation_north_arrow(
+    location = "tl",
+    which_north = "true",
+    style = north_arrow_fancy_orienteering
+  ) +
+  labs(
+    title = "Achimota Forest Reserve, Accra, Ghana",
+    subtitle = "Approximate boundary map created in R",
+    caption = "Coordinate boundary is approximate and for teaching/research visualization",
+    x = "Longitude",
+    y = "Latitude"
+  ) +
+  theme_minimal()
+```
+
+
+
+
+

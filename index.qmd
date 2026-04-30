@@ -1,20 +1,17 @@
 ---
-title: "ordinance"
+title: "Ordinance"
 format: 
   html: 
     toc: false
 ---
-![Proposed area for Takoradi habour](images/ordinance-image.jpg){#fig-ordinance}
+![Land acquired under Concessions Ordinance - Takoradi](images/ordinance-image.jpg){#fig-ordinance}
 
-<p style="text-align: justify;">
+
+
+## Background
+<p style="text-align: left;">
 This website presents my paper, **“Colonial Law and Indigenous Rights: African Responses to the Gold Coast Land Legislation, 1894–1927,”** which examines how British colonial land and forest laws transformed authority, property, and indigenous rights in the Gold Coast. Focusing on the Crown Lands Bill of 1894, the Forestry Bill of 1911, and the Forestry Ordinance of 1927, the paper argues that these laws were central to a broader colonial effort to redefine communally held and ritually protected lands as territories subject to Crown control, scientific management, and bureaucratic regulation. At the same time, the study highlights how African chiefs, educated elites, legal practitioners, and political organizations such as the Aborigines’ Rights Protection Society challenged these measures through petitions, court cases, public protest, and appeals to customary law. It further argues that these struggles left a lasting legacy, as many of the categories and legal logics introduced under colonialism continued to influence postcolonial land and forest administration in Ghana.See @fig-ordinance. 
 </p>
-## Background
-
-## Agency: ARPS, Chiefs and Cultural Resistance
-
-## Conclusion
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ######### Drag to Explore Colonial Ordinances
 

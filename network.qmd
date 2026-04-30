@@ -1,0 +1,42 @@
+---
+title: "Network"
+format: html
+---
+
+
+```{r}
+library(igraph)
+library(tidygraph)
+library(ggraph)
+library(tidyverse)
+```
+
+Network Data is made up of an *edge list* and a *node list*
+
+
+```{r}
+edge_list <- tibble(
+  from = c(1, 2, 3, 4, 1),
+  to = c(2, 3, 4, 2, 1),
+  type = letters[1:5]
+  )
+edge_list
+
+node_list <- tibble(
+  id = 1:4,
+  color = c("red", "orange", "yellow", "green")
+)
+node_list
+```
+
+Make it network data
+
+```{r}
+tbl_graph(nodes = node_list,
+          edges = edge_list,
+          directed = FALSE)
+
+graph_from_data_frame(d = edge_list)
+```
+
+

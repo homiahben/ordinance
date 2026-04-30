@@ -30,9 +30,10 @@ Customary land authority remained dominant, though British legal hegemony and pr
 The re-enactment of the Supreme COurt Ordinnance in the Gold Coast did not only redefine the hurisdiction of English COmmon Law but also the introduction of Bristish ideas and conceptions of land administration that vested all *waste lands* as Crown owned through the **The Public Land Ordinance**.
 
 
-year: "1894",
-title: "Crown Lands Bill",
-text: "Attempted classification of lands as available for Crown control, challenging customary tenure."
+### Crown Lands Bill
+1894
+
+Attempted classification of lands as available for Crown control, challenging customary tenure.
 
 
 year: "1911",

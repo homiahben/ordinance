@@ -34,10 +34,11 @@ website:
       - href: achimota-legal-sequence.qmd
         text: Achimota
       - href: sources.qmd
-        text: Sources
+        text: Selected Sources
 
       - href: about.qmd
         text: About
+bibliography: reference.bib 
 
 format:
   html:
@@ -46,6 +47,7 @@ format:
       - dark
     css: styles.css
     toc: true
+  
 
 
 

@@ -1,5 +1,8 @@
 ---
 title: "Sources"
+nocite: |
+  @*
 ---
 
-Selected Sources
+::: {#refs}
+:::

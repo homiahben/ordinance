@@ -1,0 +1,17 @@
+{
+  "hash": "6500536e192d93103d6dbad646ec0e9c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Ordinances and Reserve-Making\"\n---\n\n## What legal tools allowed colonial officials to acquire, classify, and regulate land and forests?\n\nForest reservation in the Gold Coast did not begin with trees alone. It began with law. From the late nineteenth century, colonial officials used ordinances, bills, courts, and administrative procedures to make land more legible to the state. Land that African communities understood through stool authority, lineage inheritance, sacred obligation, farming rights, tribute, and everyday use was gradually translated into legal categories such as public land, crown land, concessions, reserves, and protected forest. These categories allowed the colonial government to acquire land, define boundaries, regulate access, and punish activities such as cutting, burning, farming, or collecting forest produce without permission.\n\nThis page traces the legal background that made Achimota Forest Reserve possible. It follows a chain of legislation from the Public Lands Ordinance of 1876 to the Forest Ordinance of 1927. Together, these laws show how colonial rule transformed land and forest into administrative space. The legal history matters because Achimota was created through this larger framework. It was not simply a forest set aside for conservation. It was part of a wider colonial project that used law to join land acquisition, forestry, education, sanitation, and urban improvement.\n\n\n## Mapped (graphed for now) Ordinances and related forest reserves\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](overview_files/figure-html/ordinance-reserve-graph-1.png){width=960}\n:::\n:::\n\n\n",
+    "supporting": [
+      "overview_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -9,5 +9,78 @@ Forest reservation in the Gold Coast did not begin with trees alone. It began wi
 This page traces the legal background that made Achimota Forest Reserve possible. It follows a chain of legislation from the Public Lands Ordinance of 1876 to the Forest Ordinance of 1927. Together, these laws show how colonial rule transformed land and forest into administrative space. The legal history matters because Achimota was created through this larger framework. It was not simply a forest set aside for conservation. It was part of a wider colonial project that used law to join land acquisition, forestry, education, sanitation, and urban improvement.
 
 
-## Maps to Display
-this is where i am going to put all the maps i have no idea of creating 
+## Mapped (graphed for now) Ordinances and related forest reserves
+
+
+```{r}
+#| label: ordinance-reserve-graph
+#| message: false
+#| warning: false
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(stringr) 
+
+# Load dataset
+reserves <- read_csv("ghana_forest_reserve_ordinance_mapping_1870_1957.csv") 
+
+# Select only the reserves that matter most for the legal sequence
+key_reserves <- reserves %>%
+  filter(
+    reserve_name %in% c(
+      "Pra Anum Forest Reserve",
+      "Atewa Range Forest Reserve",
+      "Bandai Hills Forest Reserve",
+      "Esukawkaw Forest Reserve",
+      "Tano Ofin Forest Reserve",
+      "Achimota Forest Reserve / Achimota Plantation",
+      "Pompo Headwaters Forest Reserve",
+      "Bosumtwi Range Forest Reserve",
+      "Bia Tano Forest Reserve",
+      "Nsuensa Forest Reserve"
+    )
+  ) %>%
+  mutate(
+    ordinance_group = case_when(
+      creation_or_status_year < 1927 ~ "Native Jurisdiction / Native Administration",
+      str_detect(reserve_name, "Achimota") ~ "Public Lands Ordinance + Forest Ordinance, 1927",
+      creation_or_status_year >= 1927 ~ "Forest Ordinance, 1927",
+      TRUE ~ "Other legal framework"
+    ),
+    label = paste0(map_label, " (", creation_or_status_year, ")")
+  )
+
+# Timeline graph
+ggplot(
+  key_reserves,
+  aes(
+    x = creation_or_status_year,
+    y = reorder(label, creation_or_status_year),
+    shape = ordinance_group
+  )
+) +
+  geom_point(size = 3) +
+  geom_segment(
+    aes(
+      x = 1876,
+      xend = creation_or_status_year,
+      y = reorder(label, creation_or_status_year),
+      yend = reorder(label, creation_or_status_year)
+    ),
+    linewidth = 0.4,
+    alpha = 0.6
+  ) +
+  labs(
+    title = "Selected Forest Reserves and the Ordinance Frameworks Behind Them",
+    subtitle = "Gold Coast forest reserve-making, 1876–1930",
+    x = "Year of reserve creation or status",
+    y = "Forest reserve",
+    shape = "Legal framework"
+  ) +
+  theme_grey(base_size = 13)
+```
+

@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+
+This website is based on my MA Portfolio research but grew out of a digital humanities class taken in Spring 2026 at [Virginia Tech](https://liberalarts.vt.edu/departments-and-schools/department-of-history.html) with [Dr. Jesse Sadler](https://www.jessesadler.com/about), a historian and Digital Humanities Trainer and Project Consultant at Virginia Tech. The project examines how colonial land and forest ordinances shaped the creation of forest reserves with a focus on Achimota Forest Reserve, connecting law, forestry, sanitation, education, and urban improvement in the Gold Coast. It uses maps, archival images, ordinances, forestry reports, and secondary scholarship to show how Achimota became a hybrid landscape where colonial improvement overlapped with Ga meanings of frontier land, sacred space, and social marginality.
 #### Author
 
 [Bernard Homiah](mailto:homiahben@vt.edu)

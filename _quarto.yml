@@ -34,7 +34,7 @@ website:
       - href: achimota-legal-sequence.qmd
         text: Achimota
       - href: sources.qmd
-        text: Selected Sources
+        text: Sources
 
       - href: about.qmd
         text: About

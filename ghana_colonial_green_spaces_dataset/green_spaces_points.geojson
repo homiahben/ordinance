@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201111,
+          5.624722
+        ]
+      },
+      "properties": {
+        "site_id": "GHA_GS_0001",
+        "site_name": "Achimota Forest Reserve / Achimota Plantation",
+        "site_type": "forest_reserve; plantation; peri_urban_green_space",
+        "colony_region_historical": "Gold Coast Colony; Accra district/environs",
+        "modern_region": "Greater Accra",
+        "nearest_place": "Achimota, Accra",
+        "creation_year": "1929",
+        "start_year": "1921",
+        "end_year": "1957",
+        "legal_basis": "Forests Ordinance/Forests Act, 1927; land acquisition under Public Lands framework",
+        "area_ha": "432",
+        "coordinate_type": "user_supplied_centroid",
+        "coordinate_precision": "high for research centroid; not official boundary",
+        "boundary_status": "approximate; replace with official polygon",
+        "purpose_primary": "urban_buffer",
+        "purpose_secondary": "fuelwood_supply; institutional_landscape; erosion_control; shelter_belt; controlled_use",
+        "color_hex": "#1b9e77",
+        "ideology_keywords": "scientific forestry; urban ordering; institutional prestige; colonial utility; environmental sanitation; resource control",
+        "actors": "Colonial government; Forestry Department/Commission; Achimota School/Prince of Wales College; Owoo family; Achimota Village farmers",
+        "protest_or_contestation": "Owoo land claims; mango farmers asserted claims in 1930; wider forest reservation disputes over ownership/use",
+        "evidence_note": "Constituted after 1927 Forestry Ordinance; described as buffer and firewood supply for Achimota School.",
+        "source_short": "Achimota Draft; Forests Act 1927; Protected Planet list for Achimota Plantation",
+        "source_url_or_citation": "uploaded Achimota Draft; https://faolex.fao.org/docs/pdf/gha40761.pdf; https://documents.protectedplanet.net/GHA.html",
+        "verification_status": "partly_verified"
+      }
+    }
+  ]
+}

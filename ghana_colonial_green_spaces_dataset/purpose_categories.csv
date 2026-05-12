@@ -1,0 +1,11 @@
+purpose_code,label,color_hex,mapping_note
+urban_buffer,Urban buffer / peri-urban ordering,#1b9e77,"Use for reserves close to cities/schools/government institutions created as green belts, screens, or sanitation buffers."
+fuelwood_supply,Fuelwood / forest produce supply,#d95f02,"Use where official purpose includes firewood, timber, charcoal, forest produce, or institutional energy supply."
+formal_forest_reservation,Formal colonial forest reserve,#66a61e,Use for legally constituted reserves where specific purpose is not yet known.
+watershed_protection,Water supply / watershed protection,#1f78b4,Use where law/gazette names water supply or erosion/shelter functions.
+scientific_forestry,Scientific forestry / botanical management,#e7298a,"Use for events/places mainly justified by expertise, botany, surveys, demarcation, and planned management."
+state_land_control,Land control / Crown or state authority,#e6ab02,"Use for laws or sites where appropriation, alienation, vacant land, or Crown/public land logic is central."
+sacred_memory,Sacred grove / ancestral memory,#7570b3,"Use for sacred groves, burial grounds, old settlements, ritual/ecological memory, and customary protection."
+rights_contestation,Protest / land-rights contestation,#e31a1c,"Use for protests, petitions, disputes, compensation claims, reserve settlement conflicts."
+controlled_agroforestry,Controlled agroforestry / taungya,#a6761d,"Use for farming-cum-forest improvement, supervised cultivation, labor for plantation establishment."
+legal_amendment,Legal amendment / administrative refinement,#666666,"Use for changes to forestry laws, ordinances, and regulations."

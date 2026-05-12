@@ -6,8 +6,6 @@ format:
 ---
 ![Land acquired under Concessions Ordinance - Takoradi](images/ordinance-image.jpg){#fig-ordinance}
 
-
-
 ## Background
 
 This website is a digital version of my MA Portfolio project , **“Land, Law, and Colonial Improvement in the Gold Coast: African Responses and the Making of Achimota, 1884-1950,”** I trace a history of resisitance that were multifaceted and specifical environmental and how that long history led to the creation of forest reserves such as Achimota Forest Reserve in Accra, Ghana. 

@@ -1,18 +1,16 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: main
+name: Publish Quarto Website
 
-name: Quarto Publish
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
 
     steps:
       - name: Check out repository
@@ -21,16 +19,22 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       - name: Install R packages
         run: |
           Rscript -e 'install.packages(c("leaflet", "leaflet.extras", "dplyr", "readr", "htmltools", "DT", "geosphere"), repos = "https://cloud.r-project.org")'
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render Quarto site
+        run: quarto render
 
-      - name: Render and publish
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
+      
